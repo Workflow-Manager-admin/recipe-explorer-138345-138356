@@ -9,6 +9,16 @@ This project provides a minimal React template with a clean, modern UI and minim
 - **Fast**: Minimal dependencies for quick loading times
 - **Simple**: Easy to understand and modify
 
+## API Configuration
+
+The frontend expects the backend (FastAPI) to be available at `/api` (relative to frontend) or you may override the backend API address by setting the `REACT_APP_API_URL` environment variable before building or starting:
+
+- To point at a backend running locally:  
+  `REACT_APP_API_URL=http://localhost:8000 npm start`
+
+- To use relative /api (when using a proxy):  
+  (no variable needed)
+
 ## Getting Started
 
 In the project directory, you can run:
